@@ -29,7 +29,7 @@ variable "exampleVol" {
 # EC2 Instance
 ##################
 module "exampleVol1" {
-  source  = "github.com/virsas/terraform_ebs_volume"
+  source  = "git::https://github.com/virsas/terraform_ebs_volume.git?ref=v1.0.0"
   volume  = var.exampleVol
 }
 ```
